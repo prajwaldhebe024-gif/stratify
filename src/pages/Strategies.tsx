@@ -4,7 +4,14 @@ import StrategyCard from "../components/StrategyCard";
 
 function Strategies() {
   const [activeTab, setActiveTab] =
-    useState("General");
+    useState("Directional");
+
+  const tabs = [
+    "Directional",
+    "Volatility",
+    "Income",
+    "Stratify Special",
+  ];
 
   const filteredStrategies =
     strategies.filter(
@@ -20,38 +27,33 @@ function Strategies() {
       </h1>
 
       <p className="text-slate-400 mt-4">
-        Explore professionally tested
-        option trading strategies.
+        Explore option strategies organized
+        by market objective.
       </p>
 
-      <div className="flex gap-4 mt-10">
+      <div className="flex flex-wrap gap-4 mt-10">
 
-        <button
-          onClick={() =>
-            setActiveTab("General")
-          }
-          className={`px-5 py-3 rounded-xl transition-all ${
-            activeTab === "General"
-              ? "bg-blue-600 text-white"
-              : "bg-slate-800 text-slate-400"
-          }`}
-        >
-          General Strategies
-        </button>
-
-        <button
-          onClick={() =>
-            setActiveTab("Stratify Special")
-          }
-          className={`px-5 py-3 rounded-xl transition-all ${
-            activeTab ===
-            "Stratify Special"
-              ? "bg-blue-600 text-white"
-              : "bg-slate-800 text-slate-400"
-          }`}
-        >
-          Stratify Special
-        </button>
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() =>
+              setActiveTab(tab)
+            }
+            className={`px-5 py-3 rounded-xl transition-all ${
+              activeTab === tab
+                ? "bg-blue-600 text-white"
+                : "bg-slate-800 text-slate-400 hover:bg-slate-700"
+            }`}
+          >
+            {tab} (
+            {
+              strategies.filter(
+                (s) => s.category === tab
+              ).length
+            }
+            )
+          </button>
+        ))}
 
       </div>
 

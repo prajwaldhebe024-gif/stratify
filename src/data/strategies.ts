@@ -4,7 +4,7 @@ export const strategies: Strategy[] = [
   {
     id: 1,
     name: "Bull Call Spread",
-    category: "General",
+    category: "Directional",
 
     shortDescription:
       "Moderately bullish strategy with limited risk.",
@@ -54,7 +54,7 @@ export const strategies: Strategy[] = [
   {
     id: 2,
     name: "Bull Put Spread",
-    category: "General",
+    category: "Directional",
 
     shortDescription:
       "Income strategy for mildly bullish markets.",
@@ -104,7 +104,7 @@ export const strategies: Strategy[] = [
   {
     id: 3,
     name: "Iron Condor",
-    category: "General",
+    category: "Income",
 
     shortDescription:
       "Premium selling strategy for range-bound markets.",
@@ -154,6 +154,237 @@ export const strategies: Strategy[] = [
     ],
   },
 
+  {
+    id: 4,
+    name: "Bear Put Spread",
+    category: "Directional",
+
+    shortDescription:
+    "Defined-risk bearish strategy.",
+
+    marketOutlook: "Bearish",
+    volatilityOutlook: "Neutral",
+    riskLevel: "Low",
+
+    capitalRequired: "Medium",
+
+    suitableFor: "Bear Markets",
+
+    score: 8.0,
+
+    profitability: 8,
+    consistency: 7,
+    capitalEfficiency: 8,
+    easeOfExecution: 9,
+    adaptability: 7,
+
+    overview:
+    "Bear Put Spread profits from downside movement while maintaining defined risk.",
+
+    advantages: [
+    "Limited risk",
+    "Good bearish exposure",
+    "Lower capital requirement"
+    ],
+
+    disadvantages: [
+    "Limited profit",
+    "Requires directional accuracy"
+    ],
+
+    bestMarketConditions: [
+    "Bear Markets",
+    "Downtrends"
+    ],
+
+    worstMarketConditions: [
+    "Bull Markets"
+    ]
+    },
+
+    {
+    id: 5,
+    name: "Bear Call Spread",
+    category: "Directional",
+
+    shortDescription:
+    "Premium-selling bearish strategy.",
+
+    marketOutlook: "Bearish",
+    volatilityOutlook: "Low",
+    riskLevel: "Medium",
+
+    capitalRequired: "Medium",
+
+    suitableFor: "Bear Markets",
+
+    score: 8.2,
+
+    profitability: 8,
+    consistency: 8,
+    capitalEfficiency: 8,
+    easeOfExecution: 8,
+    adaptability: 8,
+
+    overview:
+    "Collects premium while maintaining defined risk.",
+
+    advantages: [
+    "Time decay advantage",
+    "Limited risk",
+    "High probability"
+    ],
+
+    disadvantages: [
+    "Limited profit"
+    ],
+
+    bestMarketConditions: [
+    "Bear Markets",
+    "Sideways Markets"
+    ],
+
+    worstMarketConditions: [
+    "Strong Bull Markets"
+    ]
+    },
+
+    {
+    id: 6,
+    name: "Long Straddle",
+    category: "Volatility",
+
+    shortDescription:
+    "Profits from large moves in either direction.",
+
+    marketOutlook: "Neutral",
+    volatilityOutlook: "High",
+    riskLevel: "Medium",
+
+    capitalRequired: "High",
+
+    suitableFor: "Volatile Markets",
+
+    score: 8.5,
+
+    profitability: 9,
+    consistency: 6,
+    capitalEfficiency: 6,
+    easeOfExecution: 8,
+    adaptability: 9,
+
+    overview:
+    "Long Straddle benefits from large moves irrespective of direction.",
+
+    advantages: [
+    "Unlimited upside",
+    "Direction neutral"
+    ],
+
+    disadvantages: [
+    "Premium decay",
+    "Requires strong movement"
+    ],
+
+    bestMarketConditions: [
+    "Event Driven Markets",
+    "Volatility Expansion"
+    ],
+
+    worstMarketConditions: [
+    "Low Volatility"
+    ]
+    },
+
+    {
+    id: 7,
+    name: "Short Straddle",
+    category: "Volatility",
+
+    shortDescription:
+    "Premium collection strategy for stable markets.",
+
+    marketOutlook: "Neutral",
+    volatilityOutlook: "Low",
+    riskLevel: "High",
+
+    capitalRequired: "High",
+
+    suitableFor: "Range Bound Markets",
+
+    score: 8.0,
+
+    profitability: 9,
+    consistency: 8,
+    capitalEfficiency: 8,
+    easeOfExecution: 7,
+    adaptability: 6,
+
+    overview:
+    "Short Straddle profits when the market remains stable.",
+
+    advantages: [
+    "High premium collection",
+    "Benefits from time decay"
+    ],
+
+    disadvantages: [
+    "Unlimited risk"
+    ],
+
+    bestMarketConditions: [
+    "Range Bound Markets"
+    ],
+
+    worstMarketConditions: [
+    "Strong Trends"
+    ]
+    },
+
+    {
+    id: 8,
+    name: "Iron Fly",
+    category: "Income",
+
+    shortDescription:
+    "High probability premium-selling strategy.",
+
+    marketOutlook: "Neutral",
+    volatilityOutlook: "Low",
+    riskLevel: "Medium",
+
+    capitalRequired: "High",
+
+    suitableFor: "Range Bound Markets",
+
+    score: 8.7,
+
+    profitability: 9,
+    consistency: 9,
+    capitalEfficiency: 7,
+    easeOfExecution: 7,
+    adaptability: 7,
+
+    overview:
+    "Iron Fly profits when price remains near a central strike.",
+
+    advantages: [
+    "High premium collection",
+    "Limited risk"
+    ],
+
+    disadvantages: [
+    "Narrow profit zone"
+    ],
+
+    bestMarketConditions: [
+    "Stable Markets"
+    ],
+
+    worstMarketConditions: [
+    "Trending Markets"
+    ]
+    },
   {
     id: 101,
     name: "Stratify Momentum Engine",

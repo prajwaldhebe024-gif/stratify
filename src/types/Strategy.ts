@@ -3,7 +3,11 @@ export interface Strategy {
 
   name: string;
 
-  category: "General" | "Stratify Special";
+  category:
+  | "Directional"
+  | "Volatility"
+  | "Income"
+  | "Stratify Special";
 
   shortDescription: string;
 
