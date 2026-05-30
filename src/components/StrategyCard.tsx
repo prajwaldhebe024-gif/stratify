@@ -30,6 +30,49 @@ function StrategyCard({ strategy }: Props) {
             {strategy.name}
           </h3>
 
+          <div className="flex flex-wrap gap-2 mt-3">
+
+            <span
+              className="
+                px-3 py-1
+                rounded-full
+                text-xs
+
+                bg-blue-500/20
+                text-blue-300
+              "
+            >
+              {strategy.marketOutlook}
+            </span>
+
+            <span
+              className="
+                px-3 py-1
+                rounded-full
+                text-xs
+
+                bg-purple-500/20
+                text-purple-300
+              "
+            >
+              {strategy.volatilityOutlook} Volatility
+            </span>
+
+            <span
+              className="
+                px-3 py-1
+                rounded-full
+                text-xs
+
+                bg-green-500/20
+                text-green-300
+              "
+            >
+              {strategy.riskLevel} Risk
+            </span>
+
+          </div>
+
           <span className="px-4 py-2 rounded-full bg-blue-500/20 text-blue-400">
             {strategy.category}
           </span>

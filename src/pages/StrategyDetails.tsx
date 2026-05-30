@@ -5,6 +5,8 @@ import StrategyInsights from "../components/StrategyInsights";
 import MarketConditionPanel from "../components/MarketConditionPanel";
 import StrategySnapshot from "../components/StrategySnapshot";
 import StrategyPayoffChart from "../components/StrategyPayoffChart";
+import StrategyScoreBreakdown from "../components/StrategyScoreBreakdown";
+import StrategyExecutionGuide from "../components/StrategyExecutionGuide";
 
 function StrategyDetails() {
   const { id } = useParams();
@@ -114,6 +116,20 @@ function StrategyDetails() {
 
       <div className="mt-16">
         <StrategyInsights strategy={strategy} />
+        <div className="mt-8">
+
+          <StrategyScoreBreakdown
+            strategy={strategy}
+          />
+          <div className="mt-8">
+
+            <StrategyExecutionGuide
+              strategy={strategy}
+            />
+
+          </div>
+
+        </div>
         <section className="mt-16">
 
           <h2 className="text-3xl font-bold mb-6">

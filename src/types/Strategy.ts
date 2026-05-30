@@ -47,4 +47,12 @@ export interface Strategy {
   bestMarketConditions: string[];
 
   worstMarketConditions: string[];
+
+  entryConditions: string[];
+
+  exitConditions: string[];
+
+  adjustmentRules: string[];
+
+  commonMistakes: string[];
 }

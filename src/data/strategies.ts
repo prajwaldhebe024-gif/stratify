@@ -49,6 +49,29 @@ export const strategies: Strategy[] = [
       "Bear Markets",
       "Range Bound Markets",
     ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
   },
 
   {
@@ -99,6 +122,29 @@ export const strategies: Strategy[] = [
       "Sharp Bear Markets",
       "High Volatility Selloffs",
     ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
   },
 
   {
@@ -152,6 +198,29 @@ export const strategies: Strategy[] = [
       "Strong Bearish Trends",
       "Volatility Expansion",
     ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
   },
 
   {
@@ -199,6 +268,29 @@ export const strategies: Strategy[] = [
 
     worstMarketConditions: [
     "Bull Markets"
+    ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
     ]
     },
 
@@ -246,6 +338,29 @@ export const strategies: Strategy[] = [
 
     worstMarketConditions: [
     "Strong Bull Markets"
+    ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
     ]
     },
 
@@ -293,6 +408,29 @@ export const strategies: Strategy[] = [
 
     worstMarketConditions: [
     "Low Volatility"
+    ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
     ]
     },
 
@@ -338,6 +476,29 @@ export const strategies: Strategy[] = [
 
     worstMarketConditions: [
     "Strong Trends"
+    ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
     ]
     },
 
@@ -383,6 +544,29 @@ export const strategies: Strategy[] = [
 
     worstMarketConditions: [
     "Trending Markets"
+    ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
     ]
     },
     {
@@ -430,7 +614,30 @@ export const strategies: Strategy[] = [
 
       worstMarketConditions: [
         "Bear Markets"
-      ]
+      ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
     },
     {
       id: 10,
@@ -474,7 +681,30 @@ export const strategies: Strategy[] = [
 
       worstMarketConditions: [
         "Unexpected Volatility Shifts"
-      ]
+      ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
     },
     {
       id: 11,
@@ -518,7 +748,30 @@ export const strategies: Strategy[] = [
 
       worstMarketConditions: [
         "Strong Bull Breakouts"
-      ]
+      ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
     },
     {
       id: 12,
@@ -562,7 +815,30 @@ export const strategies: Strategy[] = [
 
       worstMarketConditions: [
         "Market Crashes"
-      ]
+      ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
     },
     {
       id: 13,
@@ -608,7 +884,30 @@ export const strategies: Strategy[] = [
 
       worstMarketConditions: [
         "Strong Bull Markets"
-      ]
+      ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
     },
   {
     id: 101,
@@ -659,5 +958,28 @@ export const strategies: Strategy[] = [
       "Range Bound Markets",
       "Low Volume Conditions",
     ],
+    entryConditions: [
+      "IV Rank above 30",
+      "Market expected to remain range bound",
+      "30-45 DTE preferred"
+    ],
+
+    exitConditions: [
+      "50% profit target achieved",
+      "21 DTE remaining",
+      "Range assumption invalidated"
+    ],
+
+    adjustmentRules: [
+      "Roll tested side further away",
+      "Reduce position size if volatility expands",
+      "Convert to Iron Fly when appropriate"
+    ],
+
+    commonMistakes: [
+      "Selling too narrow",
+      "Holding until expiry",
+      "Ignoring volatility expansion"
+    ]
   },
 ];
