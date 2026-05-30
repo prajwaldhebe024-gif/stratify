@@ -5,7 +5,8 @@ function NewsTicker() {
     "⚡ High IV observed in weekly options",
     "📊 RBI Policy Announcement this week",
     "📈 Bank Nifty showing strength",
-    "🧠 Buffett Brain: TCS nearing fair value"
+    "🧠 Buffett Brain: TCS nearing fair value",
+    "❤️ Stratify Special: New Income Strategy Added! for Nikkuuuuuuuu"
   ];
 
   return (
