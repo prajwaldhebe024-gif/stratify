@@ -114,93 +114,117 @@ function CompareStrategies() {
             </tr>
           </thead>
 
-          <tbody>
+        <tbody>
 
             <tr>
-              <td className="p-5">
-                Win Rate
-              </td>
+                <td className="p-5">Market Outlook</td>
 
-              <td className="p-5">
-                {leftStrategy.winRate}%
-              </td>
-
-              <td className="p-5">
-                {rightStrategy.winRate}%
-              </td>
-            </tr>
-
-            <tr>
-              <td className="p-5">
-                CAGR
-              </td>
-
-              <td className="p-5">
-                {leftStrategy.cagr}%
-              </td>
-
-              <td className="p-5">
-                {rightStrategy.cagr}%
-              </td>
-            </tr>
-
-            <tr>
-              <td className="p-5">
-                Max Drawdown
-              </td>
-
-              <td className="p-5">
-                {leftStrategy.maxDrawdown}%
-              </td>
-
-              <td className="p-5">
-                {rightStrategy.maxDrawdown}%
-              </td>
-            </tr>
-
-            <tr>
-              <td className="p-5">
-                Market Outlook
-              </td>
-
-              <td className="p-5">
+                <td className="p-5">
                 {leftStrategy.marketOutlook}
-              </td>
+                </td>
 
-              <td className="p-5">
+                <td className="p-5">
                 {rightStrategy.marketOutlook}
-              </td>
+                </td>
             </tr>
 
             <tr>
-              <td className="p-5">
-                Risk Level
-              </td>
+                <td className="p-5">Volatility Outlook</td>
 
-              <td className="p-5">
+                <td className="p-5">
+                {leftStrategy.volatilityOutlook}
+                </td>
+
+                <td className="p-5">
+                {rightStrategy.volatilityOutlook}
+                </td>
+            </tr>
+
+            <tr>
+                <td className="p-5">Risk Level</td>
+
+                <td className="p-5">
                 {leftStrategy.riskLevel}
-              </td>
+                </td>
 
-              <td className="p-5">
+                <td className="p-5">
                 {rightStrategy.riskLevel}
-              </td>
+                </td>
             </tr>
 
             <tr>
-              <td className="p-5">
-                Score
-              </td>
+                <td className="p-5">Capital Required</td>
 
-              <td className="p-5">
-                {leftStrategy.score}
-              </td>
+                <td className="p-5">
+                {leftStrategy.capitalRequired}
+                </td>
 
-              <td className="p-5">
-                {rightStrategy.score}
-              </td>
+                <td className="p-5">
+                {rightStrategy.capitalRequired}
+                </td>
             </tr>
 
-          </tbody>
+            <tr>
+                <td className="p-5">Profitability</td>
+
+                <td className="p-5">
+                {leftStrategy.profitability}/10
+                </td>
+
+                <td className="p-5">
+                {rightStrategy.profitability}/10
+                </td>
+            </tr>
+
+            <tr>
+                <td className="p-5">Consistency</td>
+
+                <td className="p-5">
+                {leftStrategy.consistency}/10
+                </td>
+
+                <td className="p-5">
+                {rightStrategy.consistency}/10
+                </td>
+            </tr>
+
+            <tr>
+                <td className="p-5">Capital Efficiency</td>
+
+                <td className="p-5">
+                {leftStrategy.capitalEfficiency}/10
+                </td>
+
+                <td className="p-5">
+                {rightStrategy.capitalEfficiency}/10
+                </td>
+            </tr>
+
+            <tr>
+                <td className="p-5">Ease of Execution</td>
+
+                <td className="p-5">
+                {leftStrategy.easeOfExecution}/10
+                </td>
+
+                <td className="p-5">
+                {rightStrategy.easeOfExecution}/10
+                </td>
+            </tr>
+
+            <tr>
+                <td className="p-5">Adaptability</td>
+
+                <td className="p-5">
+                {leftStrategy.adaptability}/10
+                </td>
+
+                <td className="p-5">
+                {rightStrategy.adaptability}/10
+                </td>
+            </tr>
+
+        </tbody>
 
         </table>
       </div>

@@ -1,7 +1,21 @@
 function Footer() {
   return (
-    <footer className="bg-slate-800 text-white p-4 text-center">
-      © 2026 Trading Strategy Platform
+    <footer
+      className="
+        py-10
+        text-center
+        text-slate-400
+        border-t
+        border-slate-800
+      "
+    >
+      <p>
+        Stratify MVP v0.1
+      </p>
+
+      <p className="mt-2 text-sm">
+        Built for traders who prefer insight over noise.
+      </p>
     </footer>
   );
 }

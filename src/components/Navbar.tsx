@@ -15,10 +15,12 @@ function Navbar() {
     {
       name: "Market Pulse",
       path: "#",
+      comingSoon: true,
     },
     {
       name: "Buffett Brain",
       path: "#",
+      comingSoon: true,
     },
     {
       name: "Compare",
