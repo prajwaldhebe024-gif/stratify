@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import NewsTicker from "../components/NewsTicker";
 import FeaturedStrategies from "../components/FeaturedStrategies";
 import StatsStrip from "../components/StatsStrip";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -213,6 +214,19 @@ function Home() {
           </div>
 
         </div>
+        <Link
+          to="/strategy-rankings"
+          className="
+            px-6
+            py-3
+            rounded-xl
+            bg-slate-800
+            hover:bg-slate-700
+            transition-all
+          "
+        >
+          View Rankings
+        </Link>
 
       </section>
     </>

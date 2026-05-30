@@ -13,6 +13,10 @@ function Navbar() {
       path: "/strategies",
     },
     {
+      name: "Rankings",
+      path: "/strategy-rankings",
+    },
+    {
       name: "Market Pulse",
       path: "#",
       comingSoon: true,

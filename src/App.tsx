@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import StrategyRankings from "./pages/StrategyRankings";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -43,6 +44,11 @@ function App() {
           <Route
             path="/compare"
             element={<CompareStrategies />}
+          />
+
+          <Route
+            path="/strategy-rankings"
+            element={<StrategyRankings />}
           />
 
         </Routes>

@@ -385,6 +385,231 @@ export const strategies: Strategy[] = [
     "Trending Markets"
     ]
     },
+    {
+      id: 9,
+      name: "Synthetic Long Arbitrage",
+      category: "Directional",
+
+      shortDescription:
+        "Replicates a long stock position using options.",
+
+      marketOutlook: "Bullish",
+      volatilityOutlook: "Neutral",
+      riskLevel: "Medium",
+
+      capitalRequired: "Medium",
+
+      suitableFor: "Bull Markets",
+
+      score: 8.3,
+
+      profitability: 8,
+      consistency: 8,
+      capitalEfficiency: 9,
+      easeOfExecution: 6,
+      adaptability: 9,
+
+      overview:
+        "Synthetic Long combines a long call and short put to replicate stock ownership.",
+
+      advantages: [
+        "Capital efficient",
+        "Stock-like exposure",
+        "Flexible execution"
+      ],
+
+      disadvantages: [
+        "Assignment risk",
+        "Requires understanding of options"
+      ],
+
+      bestMarketConditions: [
+        "Bull Markets",
+        "Trending Markets"
+      ],
+
+      worstMarketConditions: [
+        "Bear Markets"
+      ]
+    },
+    {
+      id: 10,
+      name: "Long & Short Straddle",
+      category: "Volatility",
+
+      shortDescription:
+        "Study of both long and short straddle structures.",
+
+      marketOutlook: "Neutral",
+      volatilityOutlook: "Neutral",
+      riskLevel: "High",
+
+      capitalRequired: "High",
+
+      suitableFor: "Volatility Trading",
+
+      score: 8.1,
+
+      profitability: 8,
+      consistency: 7,
+      capitalEfficiency: 7,
+      easeOfExecution: 7,
+      adaptability: 9,
+
+      overview:
+        "A comparative framework for trading volatility through long and short straddles.",
+
+      advantages: [
+        "Volatility focused",
+        "Flexible adaptation"
+      ],
+
+      disadvantages: [
+        "Complex management"
+      ],
+
+      bestMarketConditions: [
+        "Changing Volatility Regimes"
+      ],
+
+      worstMarketConditions: [
+        "Unexpected Volatility Shifts"
+      ]
+    },
+    {
+      id: 11,
+      name: "Call Ratio Spread",
+      category: "Income",
+
+      shortDescription:
+        "Premium collection strategy with upside skew.",
+
+      marketOutlook: "Bullish",
+      volatilityOutlook: "Low",
+      riskLevel: "High",
+
+      capitalRequired: "Medium",
+
+      suitableFor: "Mild Bull Markets",
+
+      score: 7.9,
+
+      profitability: 8,
+      consistency: 7,
+      capitalEfficiency: 8,
+      easeOfExecution: 6,
+      adaptability: 7,
+
+      overview:
+        "Uses unequal call contracts to create a directional premium strategy.",
+
+      advantages: [
+        "Reduced cost",
+        "Premium collection"
+      ],
+
+      disadvantages: [
+        "Unlimited upside risk zone"
+      ],
+
+      bestMarketConditions: [
+        "Mild Bull Markets"
+      ],
+
+      worstMarketConditions: [
+        "Strong Bull Breakouts"
+      ]
+    },
+    {
+      id: 12,
+      name: "Put Ratio Spread",
+      category: "Income",
+
+      shortDescription:
+        "Income strategy using unequal put contracts.",
+
+      marketOutlook: "Bearish",
+      volatilityOutlook: "Low",
+      riskLevel: "High",
+
+      capitalRequired: "Medium",
+
+      suitableFor: "Mild Bear Markets",
+
+      score: 7.8,
+
+      profitability: 8,
+      consistency: 7,
+      capitalEfficiency: 8,
+      easeOfExecution: 6,
+      adaptability: 7,
+
+      overview:
+        "A ratio spread structure designed to collect premium in controlled bearish environments.",
+
+      advantages: [
+        "Premium collection",
+        "Lower cost"
+      ],
+
+      disadvantages: [
+        "Tail risk"
+      ],
+
+      bestMarketConditions: [
+        "Mild Bear Markets"
+      ],
+
+      worstMarketConditions: [
+        "Market Crashes"
+      ]
+    },
+    {
+      id: 13,
+      name: "Bear Call Ladder",
+      category: "Income",
+
+      shortDescription:
+        "Advanced premium-selling strategy with upside exposure.",
+
+      marketOutlook: "Bearish",
+      volatilityOutlook: "Low",
+      riskLevel: "High",
+
+      capitalRequired: "High",
+
+      suitableFor: "Neutral to Bearish Markets",
+
+      score: 8.0,
+
+      profitability: 8,
+      consistency: 7,
+      capitalEfficiency: 7,
+      easeOfExecution: 5,
+      adaptability: 8,
+
+      overview:
+        "Bear Call Ladder combines premium collection with asymmetric risk exposure.",
+
+      advantages: [
+        "Flexible structure",
+        "Income generation"
+      ],
+
+      disadvantages: [
+        "Complex management",
+        "Potential unlimited risk"
+      ],
+
+      bestMarketConditions: [
+        "Neutral Markets",
+        "Bear Markets"
+      ],
+
+      worstMarketConditions: [
+        "Strong Bull Markets"
+      ]
+    },
   {
     id: 101,
     name: "Stratify Momentum Engine",
