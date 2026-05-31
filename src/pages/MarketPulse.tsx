@@ -2,8 +2,17 @@ import { marketPulse } from "../data/marketPulse";
 import { strategies } from "../data/strategies";
 import ConfidenceBar from "../components/ConfidenceBar";
 import { Link } from "react-router-dom";
+import { getRecommendations } from "../utils/recommendationEngine";
 
 function MarketPulse() {
+
+    const recommendations =
+        getRecommendations(
+        marketPulse.regime,
+        marketPulse.volatility,
+        marketPulse.trend
+    );
+
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
 
@@ -33,7 +42,7 @@ function MarketPulse() {
         </h1>
 
         <p className="text-slate-400 mt-4 text-lg">
-            Today's Edge
+            Today's Edge 
 
             Range Bound • Low Volatility
 
@@ -148,102 +157,131 @@ function MarketPulse() {
 
       {/* Recommendations */}
 
-      <div className="grid md:grid-cols-3 gap-6 mt-6">
+    <div className="mt-12">
 
-        {marketPulse.recommendations.map(
-            (recommendation, index) => {
+    <h2 className="text-3xl font-bold">
+        Recommended Today
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-6 mt-6">
+
+        {recommendations.map(
+        (recommendation, index) => {
 
             const strategy =
-                strategies.find(
-                (s) =>
-                    s.id ===
-                    recommendation.strategyId
-                );
-
-            if (!strategy) {
-                return null;
-            }
+            recommendation.strategy;
 
             return (
-                <div
+            <div
                 key={strategy.id}
-                className="
-                    bg-slate-900/70
-                    border
-                    border-slate-800
-                    rounded-3xl
-                    p-6
-                "
-                >
+                className={`
+                p-6
+                rounded-3xl
+
+                border
+
+                transition-all
+
+                ${
+                    index === 0
+                    ? `
+                        bg-blue-500/10
+                        border-blue-500/30
+                    `
+                    : `
+                        bg-slate-900/70
+                        border-slate-800
+                    `
+                }
+                `}
+            >
+
+                {index === 0 && (
+                <div className="mb-3 text-blue-400">
+                    🏆 Top Recommendation
+                </div>
+                )}
+
                 <h3 className="text-xl font-bold">
-                    #{index + 1} {strategy.name}
+                #{index + 1} {strategy.name}
                 </h3>
 
                 <ConfidenceBar
-                    value={recommendation.confidence}
+                value={Math.min(
+                    Math.round(
+                    recommendation.finalScore
+                    ),
+                    100
+                )}
                 />
 
-                <div className="mt-5 space-y-2">
+                <div className="mt-5">
 
-                    {recommendation.reasons.map(
-                    (reason) => (
-                        <div
-                        key={reason}
-                        className="
-                            text-sm
-                            text-slate-300
-                        "
-                        >
-                        ✓ {reason}
-                        </div>
-                    )
-                    )}
+                <p className="text-slate-400 text-sm">
+                    Overall Strategy Score
+                </p>
+
+                <p className="text-2xl font-bold">
+                    {strategy.score}
+                </p>
 
                 </div>
 
                 <div className="mt-5 flex flex-wrap gap-2">
 
-                    <span
+                <span
                     className="
-                        px-2 py-1
-                        rounded-full
-                        bg-slate-800
-                        text-xs
-                    "
-                    >
-                    {strategy.marketOutlook}
-                    </span>
+                    px-2
+                    py-1
 
-                    <span
-                    className="
-                        px-2 py-1
-                        rounded-full
-                        bg-slate-800
-                        text-xs
+                    rounded-full
+
+                    bg-slate-800
+
+                    text-xs
                     "
-                    >
+                >
+                    {strategy.marketOutlook}
+                </span>
+
+                <span
+                    className="
+                    px-2
+                    py-1
+
+                    rounded-full
+
+                    bg-slate-800
+
+                    text-xs
+                    "
+                >
                     {strategy.riskLevel} Risk
-                    </span>
+                </span>
 
                 </div>
 
                 <Link
-                    to={`/strategy/${strategy.id}`}
-                    className="
+                to={`/strategy/${strategy.id}`}
+                className="
                     inline-block
+
                     mt-5
+
                     text-blue-400
-                    "
+                "
                 >
-                    View Strategy →
+                View Strategy →
                 </Link>
 
-                </div>
+            </div>
             );
-            }
+        }
         )}
 
-        </div>
+    </div>
+
+    </div>
 
       
 
