@@ -9,6 +9,7 @@ import StrategyDetails from "./pages/StrategyDetails";
 import LearnOptions from "./pages/LearnOptions";
 import LessonDetails from "./pages/LessonDetails";
 import CompareStrategies from "./pages/CompareStrategies";
+import MarketPulse from "./pages/MarketPulse";
 
 function App() {
   return (
@@ -49,6 +50,11 @@ function App() {
           <Route
             path="/strategy-rankings"
             element={<StrategyRankings />}
+          />
+
+          <Route
+            path="/market-pulse"
+            element={<MarketPulse />}
           />
 
         </Routes>

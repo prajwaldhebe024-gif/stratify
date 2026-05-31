@@ -18,8 +18,7 @@ function Navbar() {
     },
     {
       name: "Market Pulse",
-      path: "#",
-      comingSoon: true,
+      path: "/market-pulse",
     },
     {
       name: "Buffett Brain",
