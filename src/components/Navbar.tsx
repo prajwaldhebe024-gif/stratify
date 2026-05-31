@@ -22,8 +22,7 @@ function Navbar() {
     },
     {
       name: "Buffett Brain",
-      path: "#",
-      comingSoon: true,
+      path: "/buffett-brain",
     },
     {
       name: "Compare",

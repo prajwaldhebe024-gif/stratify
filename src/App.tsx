@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StrategyRankings from "./pages/StrategyRankings";
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Strategies from "./pages/Strategies";
@@ -10,6 +9,7 @@ import LearnOptions from "./pages/LearnOptions";
 import LessonDetails from "./pages/LessonDetails";
 import CompareStrategies from "./pages/CompareStrategies";
 import MarketPulse from "./pages/MarketPulse";
+import BuffettBrain from "./pages/BuffettBrain";
 
 function App() {
   return (
@@ -55,6 +55,11 @@ function App() {
           <Route
             path="/market-pulse"
             element={<MarketPulse />}
+          />
+
+          <Route
+            path="/buffett-brain"
+            element={<BuffettBrain />}
           />
 
         </Routes>
