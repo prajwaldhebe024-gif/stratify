@@ -1,5 +1,4 @@
 import { marketPulse } from "../data/marketPulse";
-import { strategies } from "../data/strategies";
 import ConfidenceBar from "../components/ConfidenceBar";
 import { Link } from "react-router-dom";
 import { getRecommendations } from "../utils/recommendationEngine";
