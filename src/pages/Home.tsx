@@ -3,6 +3,8 @@ import NewsTicker from "../components/NewsTicker";
 import FeaturedStrategies from "../components/FeaturedStrategies";
 import StatsStrip from "../components/StatsStrip";
 import { Link } from "react-router-dom";
+import StrategyOfWeek from "../components/StrategyOfWeek";
+import MarketScenarioCard from "../components/MarketScenarioCard";
 
 function Home() {
   return (
@@ -12,6 +14,10 @@ function Home() {
       <Hero />
 
       <StatsStrip />  
+
+      <MarketScenarioCard />
+
+      <StrategyOfWeek />
 
       <FeaturedStrategies />
       <section className="mt-32 px-4 md:px-8">
